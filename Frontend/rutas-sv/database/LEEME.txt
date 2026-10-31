@@ -1,0 +1,19 @@
+Archivo SQL: base_busroutes.sql
+Nombre de la base de datos: base_busroutes
+Motor previsto: MySQL 8.x
+
+CÓMO IMPORTARLA EN MYSQL
+1. Abre una terminal en la carpeta del proyecto.
+2. Ejecuta:
+   mysql -u root -p < database/base_busroutes.sql
+3. Escribe la contraseña de MySQL cuando la solicite.
+4. Comprueba la importación con:
+   mysql -u root -p -e "USE base_busroutes; SHOW TABLES;"
+
+TABLAS INCLUIDAS
+- rutas: catálogo de rutas, origen, destino, tiempo, tarifa y estado.
+- paradas: paradas de buses.
+- ruta_parada: relación entre rutas y paradas.
+- enlaces_utiles: enlaces de información de la página.
+
+
